@@ -5,6 +5,9 @@
 [![Platform](https://img.shields.io/badge/Platform-Termux-orange.svg)](https://termux.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Root](https://img.shields.io/badge/Permission-Root%20Required-red.svg)](#)
+![Stars](https://img.shields.io/github/stars/bagaasadit/aegis-defense?style=for-the-badge&color=yellow)
+![Forks](https://img.shields.io/github/forks/bagaasadit/aegis-defense?style=for-the-badge&color=blue)
+![Issues](https://img.shields.io/github/issues/bagaasadit/aegis-defense?style=for-the-badge&color=red)
 
 **Aegis System Defense** is an advanced security utility for Termux designed to instantly hide applications and sensitive folders using low-level system manipulation. 
 

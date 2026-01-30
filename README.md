@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Root](https://img.shields.io/badge/Permission-Root%20Required-red.svg)](#)
 
-**AEGIS v2.0** is an advanced security utility for Termux designed to instantly hide applications and sensitive folders using low-level system manipulation. 
+**Aegis System Defense** is an advanced security utility for Termux designed to instantly hide applications and sensitive folders using low-level system manipulation. 
 
 The **Hybrid Edition** integrates Android package state control (`pm disable`) with stealthy filesystem masking, ensuring your private data remains invisible even if your device falls into the wrong hands.
 
@@ -22,6 +22,8 @@ The **Hybrid Edition** integrates Android package state control (`pm disable`) w
   Supports both App Hiding and Folder Locking (Gallery/Files) using stealthy `.nomedia` masking techniques.
 - **🚀 Turbo Caching & Resolver**  
   Blazing fast app searching and listing powered by an `aapt` binary cache system.
+- **🎨 Modern Terminal UI**  
+  Features Progress Bars, Spinners, and Semantic Colors for a professional command-line experience.
 - **🔗 Intelligent CLI & Interactive Mode**  
   Switch between a user-friendly interactive menu and efficient one-liner CLI commands.
 
@@ -50,16 +52,16 @@ The **Hybrid Edition** integrates Android package state control (`pm disable`) w
 ### Option 1: Quick Install
 Copy & paste into Termux:
 ```bash
-curl -o $PREFIX/bin/st https://raw.githubusercontent.com/bagaasadit/aegis/main/st
+curl -o $PREFIX/bin/st https://raw.githubusercontent.com/bagaasadit/aegis-defense/main/st
 chmod +x $PREFIX/bin/st
 ```
 
 ### Option 2: Git Clone (Manual)
 ```bash
-git clone https://github.com/bagaasadit/aegis.git
-cd aegis
-chmod +x aegis.sh
-mv aegis.sh $PREFIX/bin/st
+git clone https://github.com/bagaasadit/aegis-defense.git
+cd aegis-defense
+chmod +x st
+mv st $PREFIX/bin/
 ```
 
 ---
@@ -86,7 +88,6 @@ The Aegis Sentinel runs as a background process. It is designed to trigger a **L
 1. **Screen Off:** User presses the power button or screen times out.
 2. **Session Kill:** Termux is swiped away from the "Recent Apps" list.
 3. **OOM Kill:** Android OS kills Termux to reclaim memory.
-4. **SSH Disconnect:** Remote session is terminated (if applicable).
 
 ---
 

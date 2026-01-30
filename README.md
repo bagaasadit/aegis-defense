@@ -1,4 +1,4 @@
-# 🛡️ AEGIS SYSTEM DEFENSE v2.0
+# 🛡️ Aegis System Defense (Termux)
 > **Hybrid App & Folder Protection with Dead Man's Switch Sentinel**  
 > *“The shield that never sleeps, the vault that never fails.”*
 

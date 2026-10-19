@@ -36,9 +36,9 @@ The **Hybrid Edition** integrates Android package state control (`pm disable`) w
 
 | Mode | Sentinel Status | Effect |
 | :--- | :---: | :--- |
-| **Lockdown** (`st h`) | 🔴 OFF | All target apps and folders are completely hidden. |
-| **Unlock** (`st u`) | 🟢 ACTIVE | System is accessible but monitored. Closing Termux triggers auto-lock. |
-| **Free Roam** (`st free`) | ⚪ DISABLED | Protection disabled. Apps stay visible even after Termux is closed. |
+| **Lockdown** (`aegis h`) | 🔴 OFF | All target apps and folders are completely hidden. |
+| **Unlock** (`aegis u`) | 🟢 ACTIVE | System is accessible but monitored. Closing Termux triggers auto-lock. |
+| **Free Roam** (`aegis free`) | ⚪ DISABLED | Protection disabled. Apps stay visible even after Termux is closed. |
 
 ---
 
@@ -55,16 +55,16 @@ The **Hybrid Edition** integrates Android package state control (`pm disable`) w
 ### Option 1: Quick Install
 Copy & paste into Termux:
 ```bash
-curl -o $PREFIX/bin/st https://raw.githubusercontent.com/bagaasadit/aegis-defense/main/st
-chmod +x $PREFIX/bin/st
+curl -o $PREFIX/bin/aegis https://raw.githubusercontent.com/bagaasadit/aegis-defense/main/aegis
+chmod +x $PREFIX/bin/aegis
 ```
 
 ### Option 2: Git Clone (Manual)
 ```bash
 git clone https://github.com/bagaasadit/aegis-defense.git
 cd aegis-defense
-chmod +x st
-mv st $PREFIX/bin/
+chmod +x aegis
+cp aegis $PREFIX/bin/
 ```
 
 ---
@@ -73,15 +73,15 @@ mv st $PREFIX/bin/
 
 | Command | Description |
 | :--- | :--- |
-| `st` or `st menu` | Launch the **Interactive Menu** (Recommended). |
-| `st u` | **Unlock:** Unhide all targets and activate Sentinel. |
-| `st h` | **Hide:** Manually trigger immediate lockdown. |
-| `st free` | **Permanent Show:** Unhide targets without Sentinel watch. |
-| `st search <key>` | Fast search and add apps by name. |
-| `st folder` | Open folder explorer to protect local directories. |
-| `st list` | View all currently protected apps and folders. |
-| `st status` | Check Sentinel health and protection statistics. |
-| `st refresh` | Rebuild the local application name database. |
+| `aegis` or `aegis menu` | Launch the **Interactive Menu** (Recommended). |
+| `aegis u` | **Unlock:** Unhide all targets and activate Sentinel. |
+| `aegis h` | **Hide:** Manually trigger immediate lockdown. |
+| `aegis free` | **Permanent Show:** Unhide targets without Sentinel watch. |
+| `aegis search <key>` | Fast search and add apps by name. |
+| `aegis folder` | Open folder explorer to protect local directories. |
+| `aegis list` | View all currently protected apps and folders. |
+| `aegis status` | Check Sentinel health and protection statistics. |
+| `aegis refresh` | Rebuild the local application name database. |
 
 ---
 
